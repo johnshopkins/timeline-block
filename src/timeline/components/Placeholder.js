@@ -28,7 +28,7 @@ export default ({ clientId, setAttributes }) => {
               createBlocksFromInnerBlocksTemplate(
                 nextVariation.innerBlocks
               ),
-              true
+              false
             );
           }
         }}

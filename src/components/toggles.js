@@ -36,8 +36,6 @@ export default ({ attributes, clientId, setAttributes }) => {
               const fistBlockId = blocks[0];
               const firstBlock = getBlock(fistBlockId);
 
-              console.log(firstBlock)
-
               if (firstBlock.name !== 'jhu/simple-wysiwyg') {
                 const blocksPresent = blocks.map(id => getBlock(id).name);
                 throw new Error('No WYSIWYG field found. Blocks found: ' + blocksPresent.join(', '));
