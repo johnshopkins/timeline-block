@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "jhu/timeline-milestone",
+  "version": "0.0.0",
+  "title": "Milestone",
+  "category": "widgets",
+  "icon": "flag",
+  "description": "Milestone Gutenberg block",
+  "parent": [
+    "jhu/timeline-milestones"
+  ],
+  "attributes": {
+    "date": {
+      "type": "string",
+      "source": "text",
+      "selector": "p",
+      "default": ""
+    },
+    "hasDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "h4",
+      "default": ""
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": true,
+    "html": false
+  },
+  "textdomain": "timeline",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

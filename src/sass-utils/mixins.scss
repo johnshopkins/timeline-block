@@ -1,0 +1,24 @@
+@use './variables' as *;
+
+@mixin block_identifier($size, $color) {
+  border-left: $size solid $color;
+  margin-left: 10px;
+  padding-left: 10px;
+
+  .block-label {
+    color: darken($color, 10%);
+    font-family: $sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .block-list-appender {
+    padding: 10px 0;
+    position: relative;
+
+    button {
+      background: $gray;
+    }
+  }
+}

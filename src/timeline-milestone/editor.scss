@@ -1,0 +1,5 @@
+@use '../sass-utils/main' as *;
+
+.wp-block-jhu-timeline-milestone {
+  @include block_identifier(10px, lighten($gray, 20%));
+}

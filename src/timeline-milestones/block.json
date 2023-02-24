@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "jhu/timeline-milestones",
+  "version": "0.0.0",
+  "title": "Milestones",
+  "category": "widgets",
+  "icon": "flag",
+  "description": "Milestones Gutenberg block",
+  "parent": [
+    "jhu/timeline",
+    "jhu/timeline-group"
+  ],
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": true,
+    "html": false,
+    "inserter": false,
+    "reusable": false
+  },
+  "textdomain": "timeline",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

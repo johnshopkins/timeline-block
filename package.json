@@ -1,7 +1,9 @@
 {
-  "name": "timeline-block",
-  "version": "1.0.0",
-  "main": "build/index.js",
+  "name": "timeline",
+  "version": "0.0.0",
+  "description": "Gutenberg timeline block",
+  "author": "Jen Wachter",
+  "license": "GPL-2.0-or-later",
   "scripts": {
     "build": "wp-scripts build",
     "format": "wp-scripts format",
@@ -13,8 +15,14 @@
   },
   "devDependencies": {
     "@wordpress/block-editor": "^11.4.0",
+    "@wordpress/blocks": "^12.4.0",
     "@wordpress/components": "^23.4.0",
+    "@wordpress/compose": "^6.4.0",
+    "@wordpress/data": "^8.4.0",
+    "@wordpress/element": "^5.4.0",
     "@wordpress/i18n": "^4.27.0",
-    "@wordpress/scripts": "^25.4.0"
+    "@wordpress/scripts": "^25.4.0",
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.21"
   }
 }

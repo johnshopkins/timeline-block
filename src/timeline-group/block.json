@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "jhu/timeline-group",
+  "version": "0.0.0",
+  "title": "Timeline group",
+  "category": "widgets",
+  "icon": "menu",
+  "description": "Timeline Gutenberg block",
+  "parent": [
+    "jhu/timeline"
+  ],
+  "attributes": {
+    "hasDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "h3",
+      "default": ""
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": true,
+    "html": false
+  },
+  "textdomain": "timeline",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

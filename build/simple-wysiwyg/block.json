@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "jhu/simple-wysiwyg",
+  "version": "0.0.0",
+  "title": "Simple WYSIWYG",
+  "category": "widgets",
+  "icon": "edit",
+  "description": "Simple WYSIWYG block",
+  "attributes": {
+    "className": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "div",
+      "attribute": "class",
+      "default": "simple-wysiwyg"
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "customClassName": false,
+    "html": false,
+    "inserter": false,
+    "reusable": false
+  },
+  "textdomain": "simple-wysiwyg",
+  "editorScript": "file:./index.js"
+}
